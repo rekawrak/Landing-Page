@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 250px;
+}
+
+.main {
+    padding: 50px 0;
+}
+
+.main_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding: 30px 0;
+}
+
+.main_title:after {
+    /* pseudo element */
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #2b2b2b;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.information_and_links {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    max-width: 406px;
+    margin-right: 50px;
+}
+
+.story_title_3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.accent-color {
+    color: #00A4E5;
+}
+
+.story_text {}
+
+.email {
+    width: 342;
+    height: 22;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: center;
+    background-image: url(/static/mail_line.png);
+    background-size: cover;
+    /* фиксация картинки в рамке */
+    filter: grayscale(1);
+    /* Черно-белый фильтр для изображения */
+    transition: 0.5s;
+    /* Время изменения цвета изображения */
+}
+
+.copied-message {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: gray;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.copied-message.visible {
+    opacity: 1;
+}
+
+#mailID {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: #fff;
+}
+
+.email:hover {
+    filter: grayscale(0);
+    /* Цветное изображение при наведении */
+}
+
+
+.right_socials {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.socials {
+    padding: 15px;
+    font: 24px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 140px;
+    height: 224px;
+    border-radius: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    background-size: cover;
+    /* фиксация картинки в рамке */
+}
+
+.socials:nth-child(1) {
+    background-image: url(/static/tg.png);
+    filter: grayscale(1);
+    /* Черно-белый фильтр для изображения */
+    transition: 0.5s;
+    /* Время изменения цвета изображения */
+}
+
+.socials:nth-child(1):hover {
+    filter: grayscale(0);
+    /* Цветное изображение при наведении */
+}
+
+
+.socials:nth-child(2) {
+    background-image: url(/static/vkont.png);
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.socials:nth-child(2):hover {
+    filter: grayscale(0);
+}
+
+.socials:nth-child(3) {
+    background-image: url(/static/gh.png);
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.socials:nth-child(3):hover {
+    filter: grayscale(0);
+}
+
+.socials:nth-child(4) {
+    background-image: url(/static/spotify.png);
+    margin-right: 0px;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.socials:nth-child(4):hover {
+    filter: grayscale(0);
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .socials {
+        flex-wrap: wrap;
+    }
+}
+
+/* @media screen and (max-width: 500px) {
+    .story_left {
+        flex-wrap: wrap;
+    }
+
+    .right_socials {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .story_inner {
+        flex-wrap: wrap;
+    }
+
+    .email {
+        margin-bottom: 20px;
+    }
+
+    .socials {
+        margin-bottom: 20px;
+    }
+
+    .socials:nth-child(4) {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+} */
+
+@media screen and (max-width: 500px) {
+
+    .information_and_links {
+        flex-direction: column;
+    }
+
+    .left {
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .email {
+        width: 80%;
+    }
+
+    .right_socials {
+        flex-direction: column;
+    }
+
+    .socials {
+        margin: 0 auto 10px;
+    }
+
+    .socials:nth-child(4) {
+        margin-bottom: 10px;
+        margin-right: 110px;
+    }
+
+}
