@@ -196,33 +196,7 @@ body {
     }
 }
 
-/* @media screen and (max-width: 500px) {
-    .story_left {
-        flex-wrap: wrap;
-    }
 
-    .right_socials {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .story_inner {
-        flex-wrap: wrap;
-    }
-
-    .email {
-        margin-bottom: 20px;
-    }
-
-    .socials {
-        margin-bottom: 20px;
-    }
-
-    .socials:nth-child(4) {
-        margin-bottom: 0;
-        margin-right: 20px;
-    }
-} */
 
 @media screen and (max-width: 500px) {
 
