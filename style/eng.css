@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
 @font-face {
     font-family: 'HeliosCondBlackC';
-    src: url('static/HeliosCondBlackC.ttf')  fromat('truetype');
+    src: url('fonts/HeliosCondBlackC.ttf')  fromat('truetype');
 }
 
 html {
